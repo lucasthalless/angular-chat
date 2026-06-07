@@ -1,0 +1,39 @@
+.bubble-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+
+  &.user {
+    justify-content: flex-end;
+
+    .bubble {
+      background-color: var(--accent);
+      color: var(--accent-foreground);
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+.bubble {
+  max-width: 70%;
+  background-color: var(--surface-elevated);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border-bottom-left-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.content {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 11px;
+  color: var(--text-muted);
+  align-self: flex-end;
+}

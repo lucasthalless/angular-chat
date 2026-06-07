@@ -1,0 +1,6 @@
+<div class="bubble-wrapper" [class.user]="message.role === 'user'">
+  <div class="bubble">
+    <p class="content">{{ message.content }}</p>
+    <span class="timestamp">{{ message.timestamp | date:'HH:mm' }}</span>
+  </div>
+</div>

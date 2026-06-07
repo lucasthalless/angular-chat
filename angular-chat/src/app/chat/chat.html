@@ -1,0 +1,16 @@
+<div class="chat-container">
+  <div class="messages-area">
+    @for (msg of messages; track msg.id) {
+      <app-message-bubble [message]="msg" />
+    }
+  </div>
+
+  <div class="input-area">
+    <input
+      class="chat-input"
+      type="text"
+      placeholder="Digite uma mensagem..."
+    />
+    <button class="send-btn">Enviar</button>
+  </div>
+</div>
